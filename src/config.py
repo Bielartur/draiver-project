@@ -9,6 +9,7 @@ load_dotenv(dotenv_path=Path(__file__).parent.parent / ".env")
 SERVICE_ACCOUNT_FILE = os.getenv("SERVICE_ACCOUNT_FILE")
 SPREADSHEET_ID      = os.getenv("SPREADSHEET_ID")
 WORKSHEET_GID       = int(os.getenv("WORKSHEET_GID"))
+WORKSHEET_GID_2     = int(os.getenv("WORKSHEET_GID_2"))
 
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets.readonly",
